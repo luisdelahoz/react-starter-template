@@ -54,8 +54,7 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write --ignore-unknown",
-      "eslint --cache --fix",
-      "yarn test"
+      "eslint --cache --fix"
     ]
   }
 }
