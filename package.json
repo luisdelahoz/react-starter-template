@@ -55,7 +55,7 @@
     "*.{js,jsx,ts,tsx}": [
       "prettier --write --ignore-unknown",
       "eslint --cache --fix",
-      "npm test"
+      "yarn test"
     ]
   }
 }
