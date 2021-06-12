@@ -4,8 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - esbuild instead of babel.
 - eslint with airbnb styleguide.
-- prettier.
-- husky and lint-staged to run a pre-commit hook (eslint + prettier).
+- prettier (formatter).
+- husky and lint-staged to run a pre-commit hook (eslint + prettier + tests).
 
 ## Available Scripts
 
@@ -40,6 +40,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-## TODO
+## Prettier with Visual Studio Code
 
-- Run tests in pre-commit hook
+To use it, you need to do the following:
+
+- Install [Prettier - Code Formatter extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
+- Set Prettier as the default formatter in User Settings (Text Editor > Editor: Default Formatter).
+- Check that Eslint is not enable as formatter (Text Editor > Eslint > Format).
+- Verify that the file types you want to format do not have a specific formatter in User Settings JSON (for more information check the Prettier extension documentation).
+- Optional: install [Formatting Toggle extension](https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle) to have the option to enable / disable formatting using the button located at the bottom right of the editor.
