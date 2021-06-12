@@ -19,7 +19,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
+    "test": "cross-env CI=true craco test --env=jsdom",
     "prepare": "husky install"
   },
   "browserslist": {
@@ -39,6 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
     "craco-esbuild": "^0.3.2",
+    "cross-env": "^7.0.3",
     "eslint": "^7.28.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -54,7 +55,8 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write --ignore-unknown",
-      "eslint --cache --fix"
+      "eslint --cache --fix",
+      "yarn test"
     ]
   }
 }
