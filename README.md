@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and it has installed and configured the following packages:
 
-- esbuild instead of babel.
+- esbuild instead of webpack.
 - eslint with airbnb styleguide.
 - prettier (formatter).
 - husky and lint-staged to run a pre-commit hook (eslint + prettier + tests).
