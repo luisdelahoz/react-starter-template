@@ -20,6 +20,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "cross-env CI=true craco test --env=jsdom",
+    "test:watch": "craco test --watch",
     "prepare": "husky install"
   },
   "browserslist": {
