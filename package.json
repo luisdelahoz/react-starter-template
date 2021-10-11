@@ -11,6 +11,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "yarn lint --fix",
     "test": "cross-env CI=true craco test --env=jsdom",
     "test:watch": "craco test --watch",
     "prepare": "husky install"
