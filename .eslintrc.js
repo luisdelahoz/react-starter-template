@@ -29,6 +29,18 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '**/*.test.ts',
+          '**/*.test.tsx',
+          '**/*.test.js',
+          '**/*.test.jsx',
+          'src/setupTests.ts',
+        ],
+      },
+    ],
     'max-len': ['warn', { code: 80 }],
     'no-use-before-define': 'off',
     'no-shadow': 'off',
